@@ -6,6 +6,8 @@ resource "aws_vpc" "day2-vpc" {
     Name = "cust-vpc"
   }
 }
+
+
 # create internet gateway
 resource "aws_internet_gateway" "day2-ig" {
     vpc_id = aws_vpc.day2-vpc.id
